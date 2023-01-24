@@ -1,0 +1,115 @@
+.new{
+    width: 100%;
+    display: flex;
+
+    .newCont{
+        flex: 6;
+
+        .top{
+            --webkit-box-shadow:2px 4px 10px 1px rgba(0,0,0,0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+
+            h1{
+                color:rgba(0, 138, 74, 0.61);
+            }
+        }
+
+        .bottom{
+            --webkit-box-shadow:2px 4px 10px 1px rgba(0,0,0,0.47);
+            box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+
+            h1{
+                color:lightgray;
+                font-size: 20px;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+
+            .right{
+                display: flex;
+                flex: 2;
+
+                img{
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+
+                form{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    justify-content: space-between;
+
+                    .formInput{
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+
+                        &.access{
+                            input{
+                                display: flex;
+                                color: red;
+                            }
+                        }
+
+                        label{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+
+
+                            .icon{
+                                cursor: pointer;
+                            }
+                        }
+                        
+                        input{
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            border-bottom: 1px solid gray;
+                        }
+
+                        select{
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            border-bottom: 1px solid gray;
+                            cursor: pointer;
+                            background: none;
+
+                            option{
+                                padding: 10px;
+                                border: none;
+                            }
+                        }
+                    }
+
+                    button{
+                        width: 150px;
+                        height: 50px;
+                        padding: 10px;
+                        border: none;
+                        background-color: teal;
+                        color: white;
+                        font-weight: bold;
+                        cursor: pointer;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
